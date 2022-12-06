@@ -366,7 +366,7 @@ a:hover {
 @media screen and (max-width: 777px) {
     .textopro {
         text-align: center;
-        padding: 2px 30px;
+        padding: 2px 25px;
         color: white;
         font-size: 20px;
   
@@ -385,7 +385,11 @@ a:hover {
 @media screen and (mxx-width: 500px) {
     .header-conteine {
         background-image: url(./img/Design\ sem\ nome\ \(6\).png);  
-    }}
+
+       height: 100vw;
+            }
+        }
+   
 
 @media screen and (max-width: 777px) {
     .header-conteine {
@@ -394,8 +398,8 @@ a:hover {
     justify-content: center;
     align-items: flex-start;
      display: flex;
-     height: 100 auto;
-     display: inline-block;
+     height: 170vw;
+     
      
 
     }
@@ -424,7 +428,7 @@ a:hover {
     .card-conteine {
        
         text-align: center;
-       padding: 0px 50px;
+       padding: 0px 70px;
        
         
     }
@@ -437,7 +441,7 @@ a:hover {
         text-align: center;
         padding: 0px 10px 50px;
        
-
+        justify-content: center;
        
 
     }
@@ -543,9 +547,9 @@ a:hover {
 @media screen and (max-width: 400px) {
     .card-conteine {
         text-align: center;
-        padding: 0px 40px;
+        padding: 0px 50px;
         height: auto;
-    
+     justify-content: center;
        
     }
 }
@@ -563,16 +567,15 @@ a:hover {
 @media screen and (max-width: 400px) {
     .conteine {
         
-        height: auto;
-
+        height: 100vw;
+        margin: 2rem;
         width: 100vw;
 
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
 
-        min-width: 320px;
-
+       
     }
 }
 
@@ -639,6 +642,11 @@ a:hover {
 @media screen and (max-width: 1060px) {
     h1 {
         font-size: 25px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .header-conteine {
+        height: 100vw;
     }
 }
 
