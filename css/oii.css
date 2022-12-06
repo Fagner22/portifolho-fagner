@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
 
 body {
-    margin: 0;
+  
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    
-    
+   background-color: #171616;
 }
 
 .header-conteine {
@@ -330,9 +329,11 @@ a:hover {
 @media screen and (max-width: 777px) {
     .conteine {
         background-color: #171616;
-        ;
-        height: 100%;
-    width: 100%;
+        flex-direction: column;
+        justify-content: center;
+     margin: 1rem;
+      display: block;
+    
     }
 
 }
@@ -365,51 +366,67 @@ a:hover {
 @media screen and (max-width: 777px) {
     .textopro {
         text-align: center;
-        padding: 8px 40px;
+        padding: 2px 30px;
         color: white;
-        margin: 0rem 0 0 0;
+        font-size: 20px;
+  
     }
 }
 @media screen and (max-width: 777px) {
     .projetosw {
+        font-size: 20px;
         text-align: center;
         color: #ffffff;
-        padding: 5px 5px;
-        margin: 1rem 0 0 0
+        padding: 100px 0px 0px 0px ;
+    
     }
 }
 
-
+@media screen and (mxx-width: 500px) {
+    .header-conteine {
+        background-image: url(./img/Design\ sem\ nome\ \(6\).png);  
+    }}
 
 @media screen and (max-width: 777px) {
     .header-conteine {
-        background-image: url(./img/Design\ sem\ nome\ \(5\).png);
-        height: 100vw;
-        background-size: 50%;
-        margin: 1rem 0 0 0;
-        
+        background-image: url(./img/Design\ sem\ nome\ \(6\).png);  
+       width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+     display: flex;
+     height: 100 auto;
+     display: inline-block;
+     
+
     }
 }
 @media screen and (max-width: 777px) {
     .conteine {
-        height: 150%;
-  width: auto;
-
+        
+        background-color: #171616;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-
-        min-width: 369px;
-
-
+        box-sizing: border-box;
+        
+        min-width: 320px;
+        
+        width: 100%;
+        height: 100vw;
+   
     }
+
+       
+       
+       
 }
 @media screen and (max-width: 777px) {
     .card-conteine {
+       
         text-align: center;
-        padding: 0px 70px;
-        height: auto;
-        margin: 0
+       padding: 0px 50px;
+       
+        
     }
 }
 
@@ -418,10 +435,10 @@ a:hover {
     .social-midia {
         
         text-align: center;
-        padding: 0px 70px;
-        height: auto;
-        margin: 0
-    
+        padding: 0px 10px 50px;
+       
+
+       
 
     }
 }
@@ -430,8 +447,8 @@ a:hover {
         
         text-align: center;
         padding: 0px 10px;
-        height: auto;
-        margin: 0
+  
+       
     
 
     }
@@ -442,10 +459,10 @@ a:hover {
         text-align: center;
     
         height: auto;
-        margin: 0rem 0 0 0;
+
         text-align: center;
         padding: 20px 40px;
-        height: auto;
+       
        
 
     }
@@ -471,12 +488,12 @@ a:hover {
 @media screen and (max-width: 470px) {
     .header-conteine {
         
-      
+        background-image: url(./img/agr\ vai\ mobile.jpg);
         height: 150vw;
         width: 100%;
         opacity: 1;
         background-color:#171616;
-        ;
+        
         background-position-x: center;
         background-size: 80%;
         display: flex;
@@ -528,7 +545,8 @@ a:hover {
         text-align: center;
         padding: 0px 40px;
         height: auto;
-        margin: 0rem 0 0 0;
+    
+       
     }
 }
 
@@ -538,12 +556,13 @@ a:hover {
         text-align: center;
         color: #fefefe;
         padding: 5px 5px;
-        margin: 1rem 0 0 0
+       
     }
 }
 
 @media screen and (max-width: 400px) {
     .conteine {
+        
         height: auto;
 
         width: 100vw;
@@ -553,7 +572,6 @@ a:hover {
         align-items: flex-start;
 
         min-width: 320px;
-
 
     }
 }
@@ -571,7 +589,7 @@ a:hover {
 @media screen and (max-width: 400px) {
     .front {
         font-size: larger 34px;
-        ;
+        
         text-align: center;
         text-transform: none;
 
@@ -584,7 +602,7 @@ a:hover {
         text-align: center;
         padding: 2px 30px;
         color: white;
-        margin: 0rem 0 0 0;
+       
     }
 }
 
@@ -639,14 +657,16 @@ a:hover {
 
 @media screen and (max-width: 777px) {
     h1 {
-        float: left;
-        font-size: 25px;
+        float: left ;
+        font-size: 15px;
         width: 100%;
-        padding: 10% 0%;
+        padding: 5px;
+        background: border-box;
         text-align: center;
         white-space: nowrap;
         justify-content: center;
         color: #ffffff;
+  
     }
 }
 
@@ -660,8 +680,8 @@ a:hover {
         white-space: nowrap;
         justify-content: center;
         color: #1c95be;
-        height: 50px;
-        margin: 1rem 0 0 0;
+        
+        
     }
 }
 
@@ -670,7 +690,7 @@ a:hover {
         
         font-size: 15px;
         width: 100%;
-        padding: 0 0;
+        padding: 5% 0;
         text-align: center;
         white-space: nowrap;
         justify-content: center;
@@ -688,8 +708,8 @@ a:hover {
         white-space: nowrap;
         justify-content: center;
         color: #1c95be;
-        height: 50px;
-        margin: 1rem 0 0 0;
+        
+        ;
     }
 }
 .rodd {
