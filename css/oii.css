@@ -1,161 +1,697 @@
-<!DOCTYPE html>
-<html lang="pt br">
+body {
+  
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+   background-color: #171616;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portifolho </title>
-    <link rel="stylesheet" href="css/oii.css">
-</head>
+.header-conteine {
+   
+    opacity: 1;
+    background-color: #171616;
+    background-repeat: no-repeat;
+    background-image: url(./img/agr\ vai.jpg);
+    background-position-x: center;
+    background-size: contain;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 80px;
+    min-width: 320px;
+    height: 50vw;
+    width: 100%;
+   
 
-<body>
-    <header class="header-conteine">
-        <div class="header">
-            <div class="cherckbox-conteine">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-items">
-                        <ul>
-                            <li>
-                                <a href="#">home</a>
-                            </li>
+}
 
-                            <li>
-                                <a href="#">contato</a>
-                            </li>
+img {
+    width: 100%;
+}
 
-                            <li>
-                                <a href="#">sobre</a>
-                            <li>
-
-                        </ul>
-
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <br> <br> <br><br><br> <br><br> <br> <br><br> <br> <br><br><br> <br><br> <br> <br><br> 
-        <div class="meu-nome">
-            <h1>Fagner Da Silva</h1>
-            <h2>front-end-daveloper</h2>
-        </div>
-        <div class="social-midia">
-            <a href="#">likedin</a>
-            <a href="#">github</a>
-        </div>
+h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 
 
-    </header>
-    <div class="espa"><br><br><br><br><br></div><br><br><br><br><br></div><br><br><br><br><br></div><br><br><br><br><br></div><br><br><br><br><br></div>
-    <main class="conteine">
-        <h1 class="projetosw">lo titulo</h1>
-        <p class="textopro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, architecto quas eum
-            repellendus fugit aspernatur aut consequuntur. Totam accusamus illo incidunt, tempora quae distinctio beatae
-            sit et atque, inventore nesciunt! descricao </p>
-        <div class="card-conteine">
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #1c95be;
+}
+
+.social-midia {
+    margin-top: 1rem 4rem 0 0;
+    display: flex;
+    max-width: auto
+    ;
+}
+
+.social-midia a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1rem 4rem;
+    border: 1px solid #ffffff;
+    display: flex;
+    min-width: 4rem;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a:hover {
+    background-color: rgb(112, 108, 110);
+}
+
+.checkbox-conteine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 40px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 55px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+/*menu*/
+.menu {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+
+}
+
+.menu-items {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-items ul {
+    list-style-type: none;
+}
+
+.menu-items ul li a {
+    margin: 10px 0px;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+#toggle:checked+.checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked+.checkbox .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked+.checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 47px;
+}
+
+#toggle:checked+.checkbox {
+    background-color: rgb(255, 255, 255);
+}
+
+#toggle:checked~.menu {
+    box-shadow: 0px 0px 0px 100vmax #ffffff;
+    z-index: 1;
+}
+
+#toggle:checked~.menu-items {
+    visibility: visible;
+    opacity: 1;
+}
+
+.conteine {
+    height: 100%;
+    width: 100%;
+  
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    background-color: #171616;
+    margin: auto;
 
 
-            <div class="card">
-                <div class="card-wrapper">
-                    <h3>projeto 1</h3>
-                    <p>vem ver</p>
-                </div>
 
-            </div>
+}
 
+.card-conteine {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    top: 80%;
+}
 
-            <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente dicta veritatis
-                accusantium fuga id ipsa dolor quos minima, odio nostrum illo rerum laborum non velit labore eos
-                inventore animi.
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    border: 1px solid #ffffff;
+    align-items: center;
+    justify-content: center;
+    background-color: #018b23;
+    background-image: url(./img/agr\ vai.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #397a56;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
 
-            </div>
-        </div>
-        <br><br><br><br><br><b></b>
+    cursor: pointer;
 
+}
 
-        <h1 class="projetosw"> titulo</h1>
-        <p class="textopro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque molestias sequi et
-            possimus quisquam voluptatum reprehenderit eius animi delectus, vero ipsa? Cumque libero iure in quidem esse
-            sapiente atque adipisci. descricao </p>
-        <div class="card-conteine">
+.card-text {
+    width: 50%;
+    letter-spacing: 1px;
 
+    color: #ffffff;
+}
 
-            <div class="card">
-                <div class="card-wrapper">
-                    <h3>projeto 1</h3>
-                    <p>vem ver</p>
-                </div>
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: center;
+}
 
-            </div>
+#rodd {
+    font-size: 15px;
+    padding: 30px;
+    color: #f6f6f6;
+    background-color: #1c2528;
+    text-align: center;
+    margin: auto;
+    
 
-
-            <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente dicta veritatis
-                accusantium fuga id ipsa dolor quos minima, odio nostrum illo rerum laborum non velit labore eos
-                inventore animi.
-
-            </div>
-        </div>
-        <br><br><br><br><br><b></b>
-        <h1 class="projetosw"> titulo</h1>
-        <p class="textopro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa optio esse dolorem sint
-            mollitia nisi amet temporibus, cum cupiditate, voluptatem quia assumenda voluptate libero pariatur. Omnis
-            quia facere rerum nisi. descricao </p>
-        <div class="card-conteine">
-
-
-            <div class="card">
-                <div class="card-wrapper">
-                    <h3>projeto 1</h3>
-                    <p>vem ver</p>
-                </div>
-
-            </div>
-
-
-            <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente dicta veritatis
-                accusantium fuga id ipsa dolor quos minima, odio nostrum illo rerum laborum non velit labore eos
-                inventore animi.
-
-            </div>
-        </div>
-        <br><br><br><br><br><b></b>
-        <h1 class="projetosw"> titulo</h1>
-        <p class="textopro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae exercitationem, ad a
-            molestiae blanditiis odit, perspiciatis illum voluptatem adipisci voluptatibus repellendus unde est aliquam
-            nisi fugit aperiam eaque, dolor asperiores? descricao </p>
-        <div class="card-conteine">
+}
 
 
-            <div class="card">
-                <div class="card-wrapper">
-                    <h3>projeto 1</h3>
-                    <p>vem ver</p>
-                </div>
 
-            </div>
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: block;
+    border: 1px solid #161515;
+    opacity: 0;
+    transition: 0, 9 ease-in-out;
+}
+
+.card-wrapper h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;
+    transition: 0.0s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+
+.card-wrapper p {
+
+    font-size: 15;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.10s ease-in-out;
+}
+
+.card:hover {
+    filter: saturate();
+}
+
+.card:hover>.card-wrapper ::before {
+    height: 250px;
+    width: 250px;
+    opacity: 1;
+
+}
+
+.card:hover>.card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 20px;
+}
+
+.roodape {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #dc6363;
+    text-align: center;
+    background-color: #397a56;
+    padding: 20px 20px;
+}
+
+@media screen and (max-width: 940px) {
+    .conteine {
+        background-color: #171616;
+        flex-direction: column;
+        justify-content: center;
+         margin: auto;
+        display: block;
+     display: inline-block;
+
+    }
+
+}
+
+@media screen and (min-width: 940px) {
+    .card-text {
+        color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width: 400px) {
+    .card-text {
+        display: none;
+    }
+}
+@media screen and (max-width: 940px) {
+    .card-text {
+        display: none;
+    }
+}
+@media screen and (min-width: 940px) {
+    .projetosw {
+        display: none;
+    }
+}
+@media screen and (min-width: 940px) {
+    .espa {
+        display: none;
+    }
+}
+@media screen and (min-width: 940px) {
+    .textopro {
+        display: none;
+    }
+}
+@media screen and (max-width: 940px) {
+    .textopro {
+        text-align: center;
+        padding: 2px 2px;
+        color: white;
+        font-size: 20px;
+  
+    }
+}
+@media screen and (max-width: 940px) {
+    .projetosw {
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+        padding: 1rem 0px 0px 0px ;
+    
+    }
+}
 
 
-            <div class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sapiente dicta veritatis
-                accusantium fuga id ipsa dolor quos minima, odio nostrum illo rerum laborum non velit labore eos
-                inventore animi.
+     
 
-            </div>
-        </div>
-        </div>
 
-       <div ></div><h5 id="rodd">feito por Fagner</h5>
-    </div>
-    </main>
+@media screen and (max-width: 940px) {
+    .header-conteine {
+        background-image: url(./img/Design\ sem\ nome\ \(6\).png);  
+     
+    justify-content: center;
+  
+     display: flex;
+     height: 200%;
 
-</html>
+    }
+}
+@media screen and (max-width: 940px) {
+    .header  {
+ height: 150vw;
+
+    }}
+
+@media screen and (max-width: 940px) {
+    .conteine {
+        
+        background-color: #171616;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        
+        min-width: 320px;
+        
+        width: 100%;
+        height: 200vw;
+   
+    }
+
+       
+       
+       
+}
+@media screen and (max-width: 940px) {
+    .card-conteine {
+       
+        text-align: center;
+      
+      
+    }
+}
+
+
+
+@media screen and (max-width: 940px) {
+    .social-midia {
+        
+        text-align: center;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+       flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (max-width: 591px) {
+    .social-midia a {
+        
+        text-align: center;
+        justify-content: center;
+     
+
+        text-align: center;
+       display: f;
+       margin: auto;
+       
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social-midia a {
+
+        text-align: center;
+        text-decoration: none;
+        color: rgb(173, 213, 235);
+        
+        border: 1px solid #8eb8e2;
+        display: flex;
+     
+        align-items: center;
+        justify-content: center;
+        transition: .2s ease-in-out;
+       
+    
+       
+
+    }
+}
+@media screen and (max-width: 400px) {
+    .social-midia a {
+
+        text-align: center;
+        text-decoration: none;
+        color: rgb(173, 213, 235);
+        padding: 15px 35px;
+        border: 1px solid #8eb8e2;
+        display: flex;
+        min-width: 25px;
+        align-items: center;
+        justify-content: center;
+        transition: .2s ease-in-out;
+       
+    
+       
+
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .header-conteine {
+        
+        
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        background-color:#171616;
+        position: absolute;
+        background-position-x: top;
+        background-size: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        
+     
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 10px;
+       
+      
+
+        white-space: nowrap;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        float: left;
+        font-size: 15px;
+        width: 100%;
+        padding: 5% 5%;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #ffffff;
+       
+        
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .roodape {
+
+        color: #2a1f1f;
+        text-align: center;
+        background-color: #397a56;
+        padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    .header-conteine {
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        float: left;
+        font-size: 15px;
+        width: 100%;
+        padding: 5% 5%;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    h1 {
+        float: left ;
+        font-size: 20px;
+        width: 100%;
+        padding: 5px;
+        background: border-box;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #ffffff;
+  
+    }
+}
+
+@media screen and (max-width: 940px) {
+    h2 {
+        float: left ;
+        font-size: 15px;
+        width: 100%;
+        padding: 5px;
+        background: border-box;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #1c95be;
+      
+     
+    }
+}
+@media screen and (max-width: 940px) {
+    .meu-nome  {
+       
+      margin: auto;
+        width: 100%;
+        padding: 5px;
+        background: border-box;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+       
+      
+     
+    }
+}
+@media screen and (max-width: 500px) {
+    h1 {
+        
+        font-size: 15px;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        float: left;
+        font-size: 15px;
+        width: 100%;
+        padding: 0% 0%;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #1c95be;
+        
+        
+    }
+}
+.rodd {
+    padding: 10px;
+
+}
+@media screen and (max-width: 440px) {
+    h2 {
+        float: left;
+        font-size: 8px;
+        width: 100%;
+        padding: 0% 0%;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #1c95be;
+        
+        ;
+    }
+}
+@media screen and (max-width: 440px) {
+    h1 {
+        
+        font-size: 12px;
+        width: 100%;
+        padding: 5% 0;
+        text-align: center;
+        white-space: nowrap;
+        justify-content: center;
+        color: #ffffff;
+    }
+}
