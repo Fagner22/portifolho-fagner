@@ -541,18 +541,18 @@ a:hover {
 
 @media screen and (max-width: 600px) {
     .social-midia a {
-
+        min-width: 25px;
         text-align: center;
         text-decoration: none;
         color: rgb(173, 213, 235);
-        
+        padding: 15px 35px;
         border: 1px solid #8eb8e2;
         display: flex;
-     
+        min-width: 25px;
         align-items: center;
         justify-content: center;
         transition: .2s ease-in-out;
-       
+       width: 80px;
     
        
 
@@ -564,10 +564,10 @@ a:hover {
         text-align: center;
         text-decoration: none;
         color: rgb(173, 213, 235);
-        padding: 10px 15px;
+        padding: 10px 25px;
         border: 1px solid #8eb8e2;
-        display: flex;
-        min-width: 25px;
+        display: block;
+        min-width: 30px;
         align-items: center;
         justify-content: center;
         transition: .2s ease-in-out;
@@ -723,10 +723,10 @@ a:hover {
     }
 }
 .baixamob {
-    width: 110px;
+    width: 60%;
     float: right;
     animation: bounceInLeft;
-    animation-duration: 15s;
+    animation-duration: 4s;
 }
 
 .baixar {
@@ -844,7 +844,7 @@ a:hover {
                 text-align: center;
                 width: 100%;
                 font-family: 'Games', sans-serif;
-                color: #2196b7;
+                color: #d5d5d5;
                 font-size: 15px;
                 padding: 0px;
             justify-content: center;
