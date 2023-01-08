@@ -577,7 +577,7 @@ a:hover {
 
     }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     .eps {
         display: none;
 
@@ -724,7 +724,7 @@ a:hover {
 }
 .baixamob {
     width: 60%;
-    float: right;
+   
     animation: bounceInLeft;
     animation-duration: 4s;
 }
@@ -733,7 +733,7 @@ a:hover {
     width: 200px;
     float: right;
     animation: bounceInLeft;
-    animation-duration: 15s;
+    animation-duration: 10s;
  
 }
 
