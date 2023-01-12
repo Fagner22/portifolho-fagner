@@ -25,9 +25,7 @@ body {
     height: 50vw;
     width: 100%;
    
-    animation: zoomInDown;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+   
 }
 
 img {
@@ -221,7 +219,7 @@ a:hover {
 .sobre{
     text-align: center;
     width: 100%;
-    font-family: 'Games', sans-serif;
+    font-family: sans-serif;
                                                 
     color: #e8edee;
     font-size: 30px;
@@ -232,7 +230,7 @@ a:hover {
 .sobremim {
     text-align: center;
     width: 80%;
-    font-family: 'Games', sans-serif;
+    font-family: sans-serif;
                                                 
     color: #d3d8da;
     font-size: 25px;
@@ -723,15 +721,17 @@ a:hover {
     }
 }
 .baixamob {
- float: right;
+    width: 60%;
    
- 
+    animation: bounceInLeft;
+    animation-duration: 4s;
 }
 
 .baixar {
     width: 200px;
     float: right;
-
+    animation: bounceInLeft;
+    animation-duration: 10s;
  
 }
 
@@ -814,7 +814,7 @@ a:hover {
     .sobremim {
         text-align: center;
         width: 100%;
-        font-family: 'Games', sans-serif;
+        font-family: sans-serif;
         color: hsl(0, 0%, 89%);
         font-size: 20px;
         padding: 0px;
@@ -828,7 +828,7 @@ a:hover {
         .sobremim {
             text-align: center;
             width: 100%;
-            font-family: 'Games', sans-serif;
+            font-family: sans-serif;
             color: #ffffff;
             font-size: 15px;
             padding: 0px;
@@ -841,7 +841,7 @@ a:hover {
             .sobremim {
                 text-align: center;
                 width: 100%;
-                font-family: 'Games', sans-serif;
+                font-family: sans-serif;
                 color: #d5d5d5;
                 font-size: 15px;
                 padding: 0px;
