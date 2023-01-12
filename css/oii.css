@@ -723,17 +723,15 @@ a:hover {
     }
 }
 .baixamob {
-    width: 60%;
+ float: right;
    
-    animation: bounceInLeft;
-    animation-duration: 4s;
+ 
 }
 
 .baixar {
     width: 200px;
     float: right;
-    animation: bounceInLeft;
-    animation-duration: 10s;
+
  
 }
 
