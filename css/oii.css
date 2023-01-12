@@ -721,7 +721,7 @@ a:hover {
     }
 }
 .baixamob {
-    width: 60%;
+    width: 40%;
    
     animation: bounceInLeft;
     animation-duration: 4s;
@@ -736,18 +736,13 @@ a:hover {
 }
 
 @media screen and (min-width: 717px) {
-    .baixamob {
-        display: none;
+    .#ba
+     
     
     }
 }
 
-@media screen and (max-width: 717px) {
-    .baixar {
-        display: none;
-    
-    }
-}
+
 
 @media screen and (max-width: 500px) {
     h1 {
