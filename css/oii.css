@@ -24,7 +24,9 @@ body {
     min-width: 320px;
     height: 50vw;
     width: 100%;
-   
+    animation: backInDown;
+    animation-duration: 4s;
+  
    
 }
 
@@ -722,28 +724,28 @@ a:hover {
     }
 }
 .baixamob {
-    width: 40%;
-   float: right;
-    animation: bounceInLeft;
-    animation-duration: 4s;
+    width: 15%;
+ 
 }
 
 .baixar {
     width: 200px;
-    float: left;
-    animation: bounceInLeft;
-    animation-duration: 10s;
- 
+  
+
+    padding: 50%;
 }
 
-@media screen and (min-width: 717px) {
-    .#ba
-     
-    
+@media screen and (max-width: 717px) {
+    .baixamob {
+        width: 40%;
+     height: 50%;
     }
+    }
+
+
+.baixar {
+    display: none;
 }
-
-
 
 @media screen and (max-width: 500px) {
     h1 {
