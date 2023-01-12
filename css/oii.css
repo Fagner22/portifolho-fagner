@@ -217,6 +217,7 @@ a:hover {
 
 
 .sobre{
+    float: left;
     text-align: center;
     width: 100%;
     font-family: sans-serif;
@@ -722,14 +723,14 @@ a:hover {
 }
 .baixamob {
     width: 40%;
-   
+   float: right;
     animation: bounceInLeft;
     animation-duration: 4s;
 }
 
 .baixar {
     width: 200px;
-    float: right;
+    float: left;
     animation: bounceInLeft;
     animation-duration: 10s;
  
